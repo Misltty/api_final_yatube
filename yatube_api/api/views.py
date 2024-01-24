@@ -1,7 +1,6 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, mixins, filters, permissions
 from rest_framework.pagination import LimitOffsetPagination
-from rest_framework.permissions import IsAuthenticated
 
 from .permissions import IsAuthorOrReadOnly
 from .serializers import CommentSerializer, FollowSerializer, \
