@@ -30,6 +30,9 @@ class Post(models.Model):
     def __str__(self):
         return self.text[:LEN_WORD]
 
+    class Meta:
+        ordering = ['-pub_date']
+
 
 class Comment(models.Model):
     author = models.ForeignKey(
